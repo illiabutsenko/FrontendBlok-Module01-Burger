@@ -28,6 +28,10 @@ a {
 /* Header */
 
 .header {
+  border-bottom: 1px solid #DEDEDE;
+}
+
+.header-wrapper {
   display: flex;
   align-items: center;
   gap: 196px;
@@ -47,13 +51,14 @@ a {
 .nav {
   flex-grow: 1;
   display: flex;
-  gap: 46px;
+  gap: 47px;
 }
 
 .nav-link {
   color: var(--dark);
   font-size: 20px;
   font-weight: 600;
+  padding-top: 2px;
 }
 
 .nav-link::after {
@@ -153,6 +158,8 @@ a {
   font-weight: 700;
   font-size: 79px;
   text-transform: capitalize;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .hero-description {
@@ -161,4 +168,68 @@ a {
   color: rgba(var(--light-rgb), .8);
   font-size: 15px;
   line-height: 160%;
+}
+
+/* Banner */
+
+.banner {
+  
+  padding-top: 137px;
+}
+
+.banner-wrapper {
+  background-image: url(../images/banner.svg);
+  max-width: 1180px;
+  height: 438px;
+  background-repeat: no-repeat;
+  padding: 100px;
+}
+
+.banner-title span {
+  display: block;
+  width: 95px;
+  height: 28px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 129%;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--light);
+  background-color: var(--accent-dark);
+  border-radius: 14px;
+}
+
+.banner-title {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  /* padding-left: 5px; */
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 127%;
+  text-transform: uppercase;
+  color: var(--light);
+}
+
+.banner-description {
+  font-weight: 400;
+  margin-top: 15px;
+  margin-bottom: 13px;
+  font-size: 15px;
+  line-height: 160%;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.bunner-btn {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 129%;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--dark);
+  background-color: var(--accent-light);
+  border-radius: 5px;
+  border: 0px;
+  width: 170px;
+  height: 58px;
+
 }
