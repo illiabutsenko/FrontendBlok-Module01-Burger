@@ -8,6 +8,8 @@
   --light: #FFFFFF;
   --light-rgb: 255, 255, 255;
   --line: #DEDEDE;
+
+  --tr: .2s;
 }
 
 body {
@@ -233,6 +235,7 @@ a {
   border: none;
   border-radius: 5px; 
   padding: 20px 25px;
+  transition: var(--tr);
 }
 
 .bunner-btn:hover {
@@ -339,6 +342,7 @@ a {
   width: 152px;
   height: 38px;
   background: var(--accent-light);
+  transition: var(--tr);
 }
 
 .menu-btn-cart {
@@ -355,7 +359,7 @@ a {
 .footer {
   background: #1E2F40;
   margin-top: 140px;
-  height: 403px;
+  padding-bottom: 78px;
 }
 
 .footer-wrapper {
@@ -368,6 +372,8 @@ a {
   width: 63px;
   height: 56px;
   background-image: url(../images/Logo_light.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
   margin-top: 6px;
 }
 
@@ -412,6 +418,10 @@ a {
   flex-direction: column;
 }
 
+.footer-nav > a:hover {
+  color: var(--accent-light);
+}
+
 .footer-list {
   margin-top: 0px;
   list-style-type: none;
@@ -429,7 +439,7 @@ li > span {
   margin-top: 10px;
   margin-bottom: 1px;
   display: block;
-  font-family: var(--second-family);
+  font-family: var(--open-sans);
   font-weight: 400;
   font-size: 15px;
   line-height: 160%;
@@ -447,4 +457,8 @@ li > span {
   line-height: 190%;
   text-transform: uppercase;
   color: var(--accent-light);
+}
+
+.footer-tel:hover {
+  color: var(--accent-dark);
 }
